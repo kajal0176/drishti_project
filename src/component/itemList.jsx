@@ -29,7 +29,6 @@ const ItemList = ({ searchTerm, selectedOption }) => {
     }
   }, [data, searchTerm, selectedOption]);
 
-  // Handle image loading errors
   const handleImageError = (e) => {
     e.target.src = DEFAULT_IMAGE;
   };
@@ -56,7 +55,7 @@ const ItemList = ({ searchTerm, selectedOption }) => {
               </div>
               <div className="item-info">
                 <h3 className="item-name">{item.name}</h3>
-                <p className="item-price">{"INR" + item.price}</p>
+                <p className="item-price">{"INR " + item.price}</p>
               </div>
             </div>
           ))
